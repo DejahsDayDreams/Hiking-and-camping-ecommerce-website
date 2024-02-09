@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Automotive</title> <!--Page title-->
+
+        <!--External links-->
+        <link rel="stylesheet" href="MainStyling.css" type="text/css"> <!--CSS-->
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+        <!--Meta data-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+        <meta author="Samantha Dejah Kitchener "> <!--your name here-->
+        <meta name="description" content="Explore a wide range of camping, automotive, and sports gear at our online shop. Find quality products for your outdoor adventures and sports activities.">
+        <meta name="keywords" content="camping gear, automotive accessories, sports equipment, outdoor gear, adventure products, sports gear shop, outdoor sports, automotive parts">
+
+
+
+        <style>
+            /* CSS classes for modals */
+            .modal {
+                display: none;
+            }
+        
+            .custom-modal  {
+                width: 1200px;
+                max-height: auto;
+                margin: 0 auto;
+                
+            }
+            .modal-content
+            {
+                width: 800px;
+                max-height: auto;
+                margin: 0 auto; 
+                box-shadow: 16px 16px 32px #1a1a1abc,
+                -16px -16px 32px #61606084;
+            }
+
+            
+        
+            /* Side Menu Styles */
+            .side-menu {
+                float: right; 
+           margin-right: 3%;
+           margin-top: 8%;
+            width: 20%; 
+            background-color: #ebf4ee; 
+            color: #fff; 
+            padding: 20px; 
+            border-radius: 15px;
+            }
+
+            .side-menu ul {
+            list-style: none; /* Remove bullet points from the list */
+            padding: 0;
+            }
+
+            .side-menu li {
+            margin-bottom: 10px; /* Spacing between menu items */
+            }
+
+            .side-menu a {
+            text-decoration: none; /* Remove underlines from links */
+            color: #000000; /* Text color for menu links */
+            }
+
+            .side-menu a:hover {
+            text-decoration: underline; /* Add underline on hover */
+            }
+
+            /* Search Box Styles */
+            .search-box {
+            margin: 20px; 
+            }
+
+            #searchInput {
+            width: 100%; 
+            padding: 10px; 
+            border: none; 
+            border-radius: 5px; 
+            }
+
+            #searchButton {
+            background-color: #328678; /* Background color for the search button */
+            color: #fff; /* Text color for the search button */
+            border: none; /* Remove button border */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px 20px; /* Padding inside the button */
+            cursor: pointer; /* Add pointer cursor on hover */
+            }
+
+            #searchButton:hover {
+            background-color: #85c54d; /* Darker background color on hover */
+            }
+        </style>
+        
+</head>
+
+<body>
+    <header>
+          
+        <section class="et-hero-tabs">
+            <div class="et-hero-tabs-container"> 
+                <a class="Logo" href="Index.html">
+                    <img src="Media/Icons/Logo.png" width="190" alt="Logo">
+                </a>
+                <a class="et-hero-tab" href="Index.html">Home</a>
+                <a class="et-hero-tab" href="Shopping.html">Shopping</a>
+                <a class="et-hero-tab" href="Contact.html">Contact</a>
+                <a class="et-hero-tab" href="Login.html">Login</a>
+                <a class="search-tab" href="#">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Search...">
+                        <button type="button" id="search-button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </a>
+                
+                
+                
+        
+                <span class="et-hero-tab-slider"></span>
+            </div>
+        </section>
+
+        <section class="et-hero-tabs2">
+            <div class="et-hero-tabs-container2"> 
+               
+                
+                <a class="et-hero-tab2" href="Camping_hiking.html">Camping & hiking</a>
+                <a class="et-hero-tab2" href="Automotive.html">Automotive</a>
+                <a class="et-hero-tab2" href="Sport.html">Sports</a>
+        
+                <span class="et-hero-tab-slider2"></span>
+            </div>
+        </section>
+
+        <div class="shop-icons-container">
+            <a href="addToCart.php" class="show-cart">
+                <img src="Media/Icons/cart.png" width="75" alt="shopping cart" class="shop_icons">
+            </a>
+            <a href="addToWishlist.php" id="wishlist-button" class="show-wishlist">
+                <img src="Media/Icons/wish-list.png" width="75" alt="wishlist" class="shop_icons">
+            </a>
+
+         </div>               
+       
+
+<!-- Cart Modal -->
+<div id="cart-modal" class="modal custom-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center"><b>Shopping Cart</b></h5>  
+            </div>
+            <div class="modal-body">
+                <!-- The cart content will be displayed here -->
+                <div id="cart-content">
+                    <!-- Cart items will be inserted here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary cart-modal-close">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Wishlist Modal -->
+<div id="wishlist-modal" class="modal custom-modal ">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="wishlist-modal-title"><b>Wishlist</b></h5>
+            </div>
+            <div class="modal-body">
+                <!-- The wishlist content will be displayed here -->
+                <div id="wishlist-content">
+                    <!-- Wishlist items will be inserted here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary wishlist-modal-close">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    </header>
+
+
+    <main>
+    <div id="cart-notification" class="cart-notification" style="display: none;">
+        Product added to cart!
+    </div>
+    <div id="wishlist-notification" class="wishlist-notification" style="display: none;">
+        Product added to wishlist!
+    </div>
+
+    
+
+    <div class="row">
+        <div class="col-md- 12 text-center title_shop custom-text"><h1>Automotive</h1></div>
+    </div><br><br><br>
+
+                <div class="row">
+                    <!-- Result area where the search results will be displayed -->
+                    <div class="col-md-12" id="search-results"></div>
+                </div>
+
+    <div class="container">
+        <div class="row">
+            <!-- Filter by Category -->
+            <div class="col-md-2">
+                <div class="filter-dropdown">
+                    <button class="filter-button" id="filter-toggle">
+                        Filter <i class="fa fa-filter"></i>
+                    </button>
+                    <div class="dropdown-content" id="filter-dropdown-content">
+                        <button class="filter-option" data-filter="all">All Products</button>
+                        <button class="filter-option" data-filter="electronics">Electronics</button>
+                        <button class="filter-option" data-filter="clothing">Clothing</button>
+                        <button class="filter-option" data-filter="Camping Gear">Camping Gear</button>
+                        <button class="filter-option" data-filter="Outdoor Furniture">Outdoor Furniture</button>
+                        <button class="filter-option" data-filter="Travel Accessories">Travel Accessories</button>
+                        <button class="filter-option" data-filter="Automotive">Automotive</button>
+                        <button class="filter-option" data-filter="Sports Equipment">Sports Equipment</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>  
+   
+    
+    
+          
+
+
+        <div class="container text-center">
+            <div class="row">
+                <!-- Product Card 31 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img31.jpg" alt="Product Image" class="img-fluid">
+                        <h3>KampCo 12V Electric Blanket</h3>
+                        <p>Price: R599.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="31">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="31">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="31">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="31"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 32 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img32.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Kaufmann Metal Jerry Can 20l</h3>
+                        <p>Price: R599.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="32">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="32">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="32">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="32" ><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 33 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img33.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Kaufmann Socket 1/4 Drive 16 Piece 4-12MM</h3>
+                        <p>Price: R499.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="33">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="33">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="33">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="33"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 34 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img34.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Addis Fuel Can 10L</h3>
+                        <p>Price: R329.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="34">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="34">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="34">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="34"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="container text-center">
+            <div class="row">
+                <!-- Product Card 35 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img35.png" alt="Product Image" class="img-fluid">
+                        <h3>Air Compressor 250PSI</h3>
+                        <p>Price: R179.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="35">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="35">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="35">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="35"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 36 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img36.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Blind Spot Mirror</h3>
+                        <p>Price: R29.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="36">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="36">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="36">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="36" ><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 37 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img37.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Compressor 12v Heavy Duty 150PSI</h3>
+                        <p>Price: R1595.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="37">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="37">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="37">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="37"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 38 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img38.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Securetech Recovery Kit 8-Ton</h3>
+                        <p>Price: R1695.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="38">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="38">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="38">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="38"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="container text-center">
+            <div class="row">
+                <!-- Product Card 39 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img39.png" alt="Product Image" class="img-fluid">
+                        <h3>B&Co Alfresco Smokeless Charcoal Grill</h3>
+                        <p>Price: R2495.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="39">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="39">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="39">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="39"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 40 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img40.jpg" alt="Product Image" class="img-fluid">
+                        <h3>FIRST AID KIT 24PC WEATHER PROOF BAG</h3>
+                        <p>Price: R229.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="40">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="40">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="40">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="40" ><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 41 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img41.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Bestway Air Mattress Single Flocked</h3>
+                        <p>Price: R299.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="41">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="41">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="41">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="41"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 42 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img42.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Highlander Multi Colour Bungee Cords</h3>
+                        <p>Price: R95.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="42">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="42">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="42">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="42"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="container text-center">
+            <div class="row">
+                <!-- Product Card 43 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img43.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Q20 Multi-purpose Lubricant 150g</h3>
+                        <p>Price: R99.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="43">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="43">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="43">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="43"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 44 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img44.png" alt="Product Image" class="img-fluid">
+                        <h3>Lumeno Battery Indicator Volt Meter</h3>
+                        <p>Price: R310.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="44">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="44">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="44">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="44" ><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 45 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img45.png" alt="Product Image" class="img-fluid">
+                        <h3>Lumeno Dual 2.4A Charger</h3>
+                        <p>Price: R340.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="45">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="45">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="45">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="45"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 46 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img46.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Lumeno Emergency LED Light</h3>
+                        <p>Price: R85.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="46">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="46">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="46">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="46"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="container text-center">
+            <div class="row">
+                <!-- Product Card 47 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img47.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Carco Plastic Licence Disc Holder</h3>
+                        <p>Price: R41.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="47">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="47">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="47">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="47"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 48 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img48.jpg" alt="Product Image" class="img-fluid">
+                        <h3>MotoQuip 4×4 Heavy Duty Rubber Mat Front Seat</h3>
+                        <p>Price: R299.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="48">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="48">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="48">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="48" ><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 49 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img49.jpg" alt="Product Image" class="img-fluid">
+                        <h3> 	MICHEL TIRE SEALER + INFLATOR</h3>
+                        <p>Price: R69.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="49">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="49">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="49">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="49"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 50 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img50.jpg" alt="Product Image" class="img-fluid">
+                        <h3>MotoQuip Magnetic ZA Emblem</h3>
+                        <p>Price: R60.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="50">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="50">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="50">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="50"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="container text-center">
+            <div class="row">
+                <!-- Product Card 51 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img51.jpg" alt="Product Image" class="img-fluid">
+                        <h3>MotoQuip Miniature Blade Fuses Assorted</h3>
+                        <p>Price: R30.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="51">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="51">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="51">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="51"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 52 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img52.jpg" alt="Product Image" class="img-fluid">
+                        <h3>MotoQuip Reflective Self Adhesive Amber</h3>
+                        <p>Price: R28.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="52">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="52">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="52">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="52" ><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 53 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img53.jpg" alt="Product Image" class="img-fluid">
+                        <h3>MotoQuip Reflective Self Adhesive Clear</h3>
+                        <p>Price: R28.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="53">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="53">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="53">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="53"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 44 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img54.jpg" alt="Product Image" class="img-fluid">
+                        <h3>MotoQuip Reflective Self Adhesive Red</h3>
+                        <p>Price: R25.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="54">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="54">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="54">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="54"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="container text-center">
+            <div class="row">
+                <!-- Product Card 55 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img55.jpg" alt="Product Image" class="img-fluid">
+                        <h3>MotoQuip Reusable Cable Ties</h3>
+                        <p>Price: R35.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="55">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="55">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="55">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="55"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 56 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img56.jpg" alt="Product Image" class="img-fluid">
+                        <h3>WD40 Penetrating Aerosol 200ml</h3>
+                        <p>Price: R120.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="56">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="56">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="56">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="56" ><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 57 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img57.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Streetwize 35mm 5m H Duty Ratchet Tie Down with J Hooks</h3>
+                        <p>Price: R235.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="57">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="57">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="57">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="57"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 58 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img58.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Streetwize Microfibre Wash Sponge</h3>
+                        <p>Price: R75.00 </p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="58">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="58">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="58">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="58"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="container text-center">
+            <div class="row">
+                <!-- Product Card 59 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img59.jpg" alt="Product Image" class="img-fluid">
+                        <h3>First Ascent Helio II 2-Person Tent</h3>
+                        <p>Price: R2995.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="59">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="59">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="59">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="59"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 60 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img60.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Tentco Wheel Cover XL</h3>
+                        <p>Price: R610.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="60">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="60">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="60">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="60" ><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><br><br><br><br>
+    </main>
+
+    <footer class="site-footer  ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Quick Links</h4><br>
+                    <ul class="quick-links">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Shopping">Catagories</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="Shopping.html">Shop now</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 ">
+                    <h4>Contact Information</h4><br>
+                    <p id="contact-info">123 Main Street<br>City, State ZIP<br>Email: example@example.com<br>Phone: (123) 456-7890</p>
+                </div>
+                <div class="col-md-4 justify-content-center align-items-center">
+                    <div class="text-center">
+                        <h4>Follow Us</h4><br><br>
+                        <ul class="list-inline">
+                            <li class="list-inline-item Social-media"><a href="#"><img src="Media/Icons/facebook.png" width="65" alt="Logo"></a></li>
+                            <li class="list-inline-item Social-media"><a href="#"><img src="Media/Icons/instagram.png" width="65" alt="Logo"></a></li>
+                            <li class="list-inline-item Social-media"><a href="#"><img src="Media/Icons/linkedin.png" width="65" alt="Logo"></a></li>
+                            <li class="list-inline-item Social-media"><a href="#"><img src="Media/Icons/twitter.png" width="65" alt="Logo"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div><br>
+            <div class="row">
+                <div class="col-md-12 text-center copyright">
+                    <p>&copy; 2023 Camp and climb. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+</footer>
+
+    <script>
+
+        ///////////////////////////////remove/////////////////////////////////////////////
+      
+      $(document).ready(function() {
+    // Event handler for the "Remove" buttons inside the table
+    $(document).on("click", ".remove-from-cart", function() {
+        var productId = $(this).data("product-id");
+        var $button = $(this);
+
+        $.ajax({
+            type: "POST",
+            url: "removeFromCart.php",
+            data: { productId: productId },
+            success: function(response) {
+                if (response === "success") {
+                    $button.closest("tr").remove();
+                } else {
+                    alert("Failed to remove the item from the cart.");
+                }
+            },
+            error: function() {
+                alert("Failed to remove the item from the cart.");
+            }
+        });
+    });
+
+    
+// Event handler for removing items from the wishlist
+$(document).on("click", ".remove-from-wishlist", function() {
+    var productId = $(this).data("product-id");
+    var $button = $(this);
+
+    $.ajax({
+        type: "POST",
+        url: "removeFromWishlist.php",
+        data: { productId: productId },
+        success: function(response) {
+            if (response === "success") {
+                // Use closest() to find the closest table row (tr) and remove it
+                $button.closest("tr").remove();
+            } else {
+                alert("Failed to remove the item from the wishlist.");
+            }
+        },
+        error: function() {
+            alert("Failed to remove the item from the wishlist.");
+        }
+    });
+});
+
+
+
+    /////////////////////////////////////////////////cart///////////////////////////////////////////////////
+
+    // Event handler for the "Add to Cart" buttons
+    $(".add-to-cart").on("click", function(event) {
+        event.preventDefault();
+        var productId = $(this).data("product-id");
+
+        $.ajax({
+            type: "POST",
+            url: "addToCart.php",
+            data: { productId: productId, action: "add_to_cart" },
+            dataType: "json",
+            success: function(data) {
+                if (data.success) {
+                    alert(data.message);
+                    $("#cart-notification").text("Product added to cart!").show();
+                } else {
+                    console.log("Error adding product to cart");
+                }
+            },
+            error: function() {
+                console.log("AJAX request failed");
+            }
+        });
+    });
+
+///////////////////////////////////////wishtlist////////////////////////////////////////////
+
+   // Event handler for adding items to the wishlist
+$(".add-to-wishlist").on("click", function(event) {
+    event.preventDefault();
+    var productId = $(this).data("product-id");
+    var action = $(this).data("action");
+
+    // Check if the item is already in the wishlist
+    if ($("#wishlist-content").find("[data-product-id='" + productId + "']").length > 0) {
+        alert("Item is already in the wishlist.");
+        return; // Exit the function to prevent adding duplicates
+    }
+
+    $.ajax({
+        type: "POST",
+        url: "addToWishlist.php",
+        data: { productId: productId, action: action },
+        dataType: "json",
+        success: function(data) {
+            if (data.success) {
+                alert(data.message);
+                $("#wishlist-notification").text("Product added to wishlist!").show();
+                // Add the item to the wishlist table
+                $("#wishlist-content").append(data.itemHtml);
+            } else {
+                console.log("Error adding product to wishlist");
+            }
+        },
+        error: function() {
+            console.log("AJAX request failed");
+        }
+    });
+});
+
+
+
+    ///////////////////////////////////////////////Models//////////////////////////////////////
+    
+   // Event handler to open the Wishlist Modal when clicking the wishlist button at the top
+$("#wishlist-button").on("click", function(event) {
+    event.preventDefault();
+    $.ajax({
+        type: "GET",
+        url: "addToWishlist.php?action=get_wishlist", // Specify the action to fetch wishlist content
+        success: function(data) {
+            $("#wishlist-content").html(data);
+            $("#wishlist-modal").show();
+        },
+        error: function() {
+            console.log("Failed to fetch wishlist content.");
+        }
+    });
+});
+
+// Event handler to close the Wishlist Modal
+$("#wishlist-modal").on("click", ".wishlist-modal-close", function() {
+    $("#wishlist-modal").hide();
+});
+
+    
+
+
+
+    // Event handler to open the Cart Modal
+    $(".show-cart").on("click", function(event) {
+        event.preventDefault();
+        $.ajax({
+            type: "GET",
+            url: "addToCart.php",
+            success: function(data) {
+                $("#cart-content").html(data);
+                $("#cart-modal").show();
+            },
+            error: function() {
+                console.log("Failed to fetch cart content.");
+            }
+        });
+    });
+
+    // Event handler to close the Cart Modal
+    $("#cart-modal").on("click", ".cart-modal-close", function() {
+        $("#cart-modal").hide();
+    });
+ });
+
+// Get references to the modals and close buttons
+var cartModal = document.getElementById("cart-modal");
+    var wishlistModal = document.getElementById("wishlist-modal");
+    var cartCloseButton = document.querySelector(".cart-modal-close");
+    var wishlistCloseButton = document.querySelector(".wishlist-modal-close");
+
+    // Function to close the cart modal
+    function closeCartModal() {
+        cartModal.style.display = "none";
+    }
+
+    // Function to close the wishlist modal
+    function closeWishlistModal() {
+        wishlistModal.style.display = "none";
+    }
+
+    // When the user clicks on the cart modal's close button, close the modal
+    cartCloseButton.onclick = closeCartModal;
+
+    // When the user clicks on the wishlist modal's close button, close the modal
+    wishlistCloseButton.onclick = closeWishlistModal;
+
+    // When the user clicks anywhere outside of the cart modal, close it
+    window.onclick = function(event) {
+        if (event.target == cartModal) {
+            closeCartModal();
+        } else if (event.target == wishlistModal) {
+            closeWishlistModal();
+        }
+    };
+
+
+    ////////////////////////////////////search////////////////////////////////////////////////
+
+   // Add an event listener to the search button
+   document.getElementById("search-button").addEventListener("click", function () {
+        // Get the search query from the input field
+        const searchTerm = document.getElementById("search-input").value;
+
+        // Send an AJAX request to the server to perform the search
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "search.php", true); 
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // Display the search results in the "search-results" div
+                document.getElementById("search-results").innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send("search=" + searchTerm);
+    });
+
+
+    //////////////////////////////////////////filter////////////////////////////////////////////////////////////////
+
+// JavaScript for filter dropdown
+document.addEventListener("DOMContentLoaded", function () {
+    // Toggle filter dropdown when the filter button is clicked
+    document.getElementById("filter-toggle").addEventListener("click", function () {
+        document.getElementById("filter-dropdown-content").classList.toggle("show");
+    });
+
+    // Close the filter dropdown when clicking outside of it
+    window.addEventListener("click", function (event) {
+        if (!event.target.matches(".filter-button")) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains("show")) {
+                    openDropdown.classList.remove("show");
+                }
+            }
+        }
+    });
+
+    // Fetch tags from PHP and dynamically generate filter options
+    fetch('search.php') 
+        .then(response => response.json())
+        .then(tags => {
+            var filterDropdown = document.getElementById("filter-dropdown-content");
+
+            // Create a "All Products" option
+            var allProductsOption = document.createElement("button");
+            allProductsOption.innerText = "All Products";
+            allProductsOption.setAttribute("data-filter", "all");
+            filterDropdown.appendChild(allProductsOption);
+
+            // Create filter options for each tag fetched from the database
+            tags.forEach(tag => {
+                var filterOption = document.createElement("button");
+                filterOption.innerText = tag;
+                filterOption.setAttribute("data-filter", tag);
+                filterDropdown.appendChild(filterOption);
+            });
+
+            // Apply filter when a filter option is clicked
+            var filterOptions = document.getElementsByClassName("filter-option");
+            for (var i = 0; i < filterOptions.length; i++) {
+                filterOptions[i].addEventListener("click", function () {
+                    var filterValue = this.getAttribute("data-filter");
+                    filterProducts(filterValue);
+                });
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching tags:', error);
+        });
+});
+
+// JavaScript for filtering products (same as before)
+function filterProducts(category) {
+    // Get all product cards
+    var productCards = document.getElementsByClassName("product-card");
+
+    // Show all products if category is "all"
+    if (category === "all") {
+        for (var i = 0; i < productCards.length; i++) {
+            productCards[i].style.display = "block";
+        }
+    } else {
+        // Hide products that don't match the selected category
+        for (var i = 0; i < productCards.length; i++) {
+            var productCategory = productCards[i].getAttribute("data-category");
+            if (productCategory === category) {
+                productCards[i].style.display = "block";
+            } else {
+                productCards[i].style.display = "none";
+            }
+        }
+    }
+}
+
+
+    </script>
+</body>
+
+</html>

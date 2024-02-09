@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Camping and Hiking</title> <!--Page title-->
+
+        <!--External links-->
+        <link rel="stylesheet" href="MainStyling.css" type="text/css"> <!--CSS-->
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+        <!--Meta data-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+        <meta author=" Samantha Dejah Kitchener"> <!--your name here-->
+        <meta name="description" content="Explore a wide range of camping, automotive, and sports gear at our online shop. Find quality products for your outdoor adventures and sports activities.">
+        <meta name="keywords" content="camping gear, automotive accessories, sports equipment, outdoor gear, adventure products, sports gear shop, outdoor sports, automotive parts">
+
+
+
+        <style>
+            /* CSS classes for modals */
+            .modal {
+                display: none;
+            }
+        
+            .custom-modal  {
+                width: 1200px;
+                max-height: auto;
+                margin: 0 auto;
+                
+            }
+            .modal-content
+            {
+                width: 800px;
+                max-height: auto;
+                margin: 0 auto; 
+                box-shadow: 16px 16px 32px #1a1a1abc,
+                -16px -16px 32px #61606084;
+            }
+
+            
+        
+            /* Side Menu Styles */
+            .side-menu {
+                float: right; 
+           margin-right: 3%;
+           margin-top: 8%;
+            width: 20%; 
+            background-color: #ebf4ee; 
+            color: #fff; 
+            padding: 20px; 
+            border-radius: 15px;
+            }
+
+            .side-menu ul {
+            list-style: none; /* Remove bullet points from the list */
+            padding: 0;
+            }
+
+            .side-menu li {
+            margin-bottom: 10px; /* Spacing between menu items */
+            }
+
+            .side-menu a {
+            text-decoration: none; /* Remove underlines from links */
+            color: #000000; /* Text color for menu links */
+            }
+
+            .side-menu a:hover {
+            text-decoration: underline; /* Add underline on hover */
+            }
+
+            /* Search Box Styles */
+            .search-box {
+            margin: 20px; 
+            }
+
+            #searchInput {
+            width: 100%; 
+            padding: 10px; 
+            border: none; 
+            border-radius: 5px; 
+            }
+
+            #searchButton {
+            background-color: #328678; /* Background color for the search button */
+            color: #fff; /* Text color for the search button */
+            border: none; /* Remove button border */
+            border-radius: 5px; /* Rounded corners */
+            padding: 10px 20px; /* Padding inside the button */
+            cursor: pointer; /* Add pointer cursor on hover */
+            }
+
+            #searchButton:hover {
+            background-color: #85c54d; /* Darker background color on hover */
+            }
+        </style>
+        
+</head>
+
+<body>
+    <header>
+          
+        <section class="et-hero-tabs">
+            <div class="et-hero-tabs-container"> 
+                <a class="Logo" href="Index.html">
+                    <img src="Media/Icons/Logo.png" width="190" alt="Logo">
+                </a>
+                <a class="et-hero-tab" href="Index.html">Home</a>
+                <a class="et-hero-tab" href="Shopping.html">Shopping</a>
+                <a class="et-hero-tab" href="Contact.html">Contact</a>
+                <a class="et-hero-tab" href="Login.html">Login</a>
+                <a class="search-tab" href="#">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Search...">
+                        <button type="button" id="search-button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </a>
+                
+                
+                
+        
+                <span class="et-hero-tab-slider"></span>
+            </div>
+        </section>
+
+        <section class="et-hero-tabs2">
+            <div class="et-hero-tabs-container2"> 
+               
+                
+                <a class="et-hero-tab2" href="Camping_hiking.html">Camping & hiking</a>
+                <a class="et-hero-tab2" href="Automotive.html">Automotive</a>
+                <a class="et-hero-tab2" href="Sport.html">Sports</a>
+        
+                <span class="et-hero-tab-slider2"></span>
+            </div>
+        </section>
+
+        <div class="shop-icons-container">
+            <a href="addToCart.php" class="show-cart">
+                <img src="Media/Icons/cart.png" width="75" alt="shopping cart" class="shop_icons">
+            </a>
+            <a href="addToWishlist.php" id="wishlist-button" class="show-wishlist">
+                <img src="Media/Icons/wish-list.png" width="75" alt="wishlist" class="shop_icons">
+            </a>
+
+         </div>               
+       
+
+<!-- Cart Modal -->
+<div id="cart-modal" class="modal custom-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center"><b>Shopping Cart</b></h5>  
+            </div>
+            <div class="modal-body">
+                <!-- The cart content will be displayed here -->
+                <div id="cart-content">
+                    <!-- Cart items will be inserted here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary cart-modal-close">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Wishlist Modal -->
+<div id="wishlist-modal" class="modal custom-modal ">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="wishlist-modal-title"><b>Wishlist</b></h5>
+            </div>
+            <div class="modal-body">
+                <!-- The wishlist content will be displayed here -->
+                <div id="wishlist-content">
+                    <!-- Wishlist items will be inserted here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary wishlist-modal-close">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    </header>
+
+
+    <main>
+    <div id="cart-notification" class="cart-notification" style="display: none;">
+        Product added to cart!
+    </div>
+    <div id="wishlist-notification" class="wishlist-notification" style="display: none;">
+        Product added to wishlist!
+    </div>
+
+    <div class="row">
+        <div class="col-md- 12 text-center title_shop custom-text"><h1>Camping & Hiking</h1></div>
+    </div><br><br><br>
+
+    
+
+    <div class="container">
+        <div class="row">
+            <!-- Filter by Category -->
+            <div class="col-md-2">
+                <div class="filter-dropdown">
+                    <button class="filter-button" id="filter-toggle">
+                        Filter <i class="fa fa-filter"></i>
+                    </button>
+                    <div class="dropdown-content" id="filter-dropdown-content">
+                        <button class="filter-option" data-filter="all">All Products</button>
+                        <button class="filter-option" data-filter="electronics">Electronics</button>
+                        <button class="filter-option" data-filter="clothing">Clothing</button>
+                        <button class="filter-option" data-filter="Camping Gear">Camping Gear</button>
+                        <button class="filter-option" data-filter="Outdoor Furniture">Outdoor Furniture</button>
+                        <button class="filter-option" data-filter="Travel Accessories">Travel Accessories</button>
+                        <button class="filter-option" data-filter="Automotive">Automotive</button>
+                        <button class="filter-option" data-filter="Sports Equipment">Sports Equipment</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    <div class="row">
+        <!-- Result area where the search results will be displayed -->
+        <div class="col-md-12" id="search-results"></div>
+    </div>
+    
+    
+          
+
+
+        <div class="container text-center">
+            <div class="row">
+                <!-- Product Card 1 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img1.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Cast Iron Potjie</h3>
+                        <p>Price: R895.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="1">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="1">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="1">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="1"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 2 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img2.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Cabo Beach Shelter</h3>
+                        <p>Price: R325.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="2">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="2">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="2">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="2" ><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 3 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img3.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Camp Table 70cm</h3>
+                        <p>Price: R560.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="3">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="3">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="3">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="3"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 4 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img4.png" alt="Product Image" class="img-fluid">
+                        <h3>Deluxe Lounger</h3>
+                        <p>Price: R1695.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="4">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="4">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="4">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="4"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="container text-center">
+            <div class="row">
+                <!-- Product Card 5 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img5.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Eland Mega Padded Folding Chair Blue</h3>
+                        <p>Price: R995.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="5">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="5">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="5">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="5"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 6 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img6.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Duiker Mesh Back Armchair Blue</h3>
+                        <p>Price: R439.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="6">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="6">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="6">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="6" ><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 7 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img7.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Alva Portable Gas Stove</h3>
+                        <p>Price: R569.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="7">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="7">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="7">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="7"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 8 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img8.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Alva Hotwheel Cast Iron Gas Braai</h3>
+                        <p>Price: R1695.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="8">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="8">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="8">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="8"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="container text-center">
+            <div class="row">
+                <!-- Product Card 9 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img9.jpg" alt="Product Image" class="img-fluid">
+                        <h3>B&Co Alfresco Smokeless Charcoal Grill</h3>
+                        <p>Price: R2495.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="9">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="9">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="9">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="9"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 10 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img10.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Bestway Air Mattress Double Flocked</h3>
+                        <p>Price: R499.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="10">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="10">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="10">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="10" ><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 11 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img11.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Bestway Air Mattress Single Flocked</h3>
+                        <p>Price: R299.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="11">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="11">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="11">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="11"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 12 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img12.png" alt="Product Image" class="img-fluid">
+                        <h3>Bugger Off Citronella Body Spray 100ml</h3>
+                        <p>Price: R99.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="12">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="12">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="12">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="12"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="container text-center">
+            <div class="row">
+                <!-- Product Card 13 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img13.png" alt="Product Image" class="img-fluid">
+                        <h3>Cadac Gas Cylinder 2kg</h3>
+                        <p>Price: R459.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="13">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="13">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="13">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="13"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 14 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img14.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Cadac Grillogas Cast Iron Braai</h3>
+                        <p>Price: R1095.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="14">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="14">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="14">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="14" ><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 15 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img15.jpg" alt="Product Image" class="img-fluid">
+                        <h3>First Ascent Explorer Down Sleeping Bag</h3>
+                        <p>Price: R3495.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="15">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="15">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="15">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="15"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 16 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img16.png" alt="Product Image" class="img-fluid">
+                        <h3>First Ascent Amplify Down Light Sleeping Bag</h3>
+                        <p>Price: R2444.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="16">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="16">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="16">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="16"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="container text-center">
+            <div class="row">
+                <!-- Product Card 17 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img17.jpg" alt="Product Image" class="img-fluid">
+                        <h3>First Ascent Amplify 900 Sleeping Bag</h3>
+                        <p>Price: R1995.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="17">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="17">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="17">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="17"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 18 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img18.png" alt="Product Image" class="img-fluid">
+                        <h3>Highlander Compact Camp Bed</h3>
+                        <p>Price: R849.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="18">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="18">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="18">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="18" ><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 19 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img19.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Oztrail 4 Shelf Deluxe Camp Cupboard</h3>
+                        <p>Price: R895.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="19">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="19">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="19">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="19"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 20 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img20.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Oztrail 4 Shelf Wardrobe</h3>
+                        <p>Price: R1449.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="20">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="20">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="20">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="20"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="container text-center">
+            <div class="row">
+                <!-- Product Card 21 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img21.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Oztrail Easy Fold Queen Size Stretcher Bed</h3>
+                        <p>Price: R2444.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="21">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="21">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="21">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="21"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 22 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img22.png" alt="Product Image" class="img-fluid">
+                        <h3>Campaid Double Steel Caravan Step</h3>
+                        <p>Price: R199.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="22">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="22">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="22">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="22" ><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 23 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img23.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Fredlin Caravan Park Adapter 16A</h3>
+                        <p>Price: R895.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="23">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="23">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="23">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="23"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 24 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img24.png" alt="Product Image" class="img-fluid">
+                        <h3>First Ascent Flint 25L Daypack</h3>
+                        <p>Price: R395.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="24">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="24">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="24">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="24"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="container text-center">
+            <div class="row">
+                <!-- Product Card 25 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img25.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Highlander Cargo 100L Bag Denim</h3>
+                        <p>Price: R749.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="25">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="25">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="25">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="25"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 26 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img26.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Campmor Safari Hennie Bow Tent – 4 Person</h3>
+                        <p>Price: R5595.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="26">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="26">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="26">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="26" ><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 27 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img27.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Coghlans ABS Tent Pegs – 6 Pack</h3>
+                        <p>Price: R79.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="27">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="27">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="27">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="27"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 28 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img28.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Coleman Event Shelter Pro XL 4.5 X 4.5 M</h3>
+                        <p>Price: R2895.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="28">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="28">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="28">
+                            <input type="hidden" name="action" value="add_to_wishlist" >
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="28"><i class="fas fa-heart"></i>Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <div class="container text-center">
+            <div class="row">
+                <!-- Product Card 29 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img29.png" alt="Product Image" class="img-fluid">
+                        <h3>First Ascent Helio II 2-Person Tent</h3>
+                        <p>Price: R2995.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="29">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="29">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="29">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="29"><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+                <!-- Product Card 30 -->
+                <div class="col-md-3 text-center">
+                    <div class="product-card">
+                        <img src="Media/Images/Products/img30.jpg" alt="Product Image" class="img-fluid">
+                        <h3>Highlander PE Groundsheet</h3>
+                        <p>Price: R349.00</p>
+                        <form method="POST" action="addToCart.php">
+                            <input type="hidden" name="productId" value="30">
+                            <input type="hidden" name="action" value="add_to_cart">
+                            <button class="btn btn-primary add-to-cart" data-product-id="30">Add to Cart</button>
+                        </form>
+                        <form method="POST" action="addToWishlist.php">
+                            <input type="hidden" name="productId" value="30">
+                            <input type="hidden" name="action" value="add_to_wishlist">
+                            <button  class="btn btn-secondary add-to-wishlist" data-product-id="30" ><i class="fas fa-heart"></i> Add to Wishlist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div><br><br><br><br>
+    </main>
+
+    <footer class="site-footer  ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Quick Links</h4><br>
+                    <ul class="quick-links">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Shopping">Catagories</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="Shopping.html">Shop now</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 ">
+                    <h4>Contact Information</h4><br>
+                    <p id="contact-info">123 Main Street<br>City, State ZIP<br>Email: example@example.com<br>Phone: (123) 456-7890</p>
+                </div>
+                <div class="col-md-4 justify-content-center align-items-center">
+                    <div class="text-center">
+                        <h4>Follow Us</h4><br><br>
+                        <ul class="list-inline">
+                            <li class="list-inline-item Social-media"><a href="#"><img src="Media/Icons/facebook.png" width="65" alt="Logo"></a></li>
+                            <li class="list-inline-item Social-media"><a href="#"><img src="Media/Icons/instagram.png" width="65" alt="Logo"></a></li>
+                            <li class="list-inline-item Social-media"><a href="#"><img src="Media/Icons/linkedin.png" width="65" alt="Logo"></a></li>
+                            <li class="list-inline-item Social-media"><a href="#"><img src="Media/Icons/twitter.png" width="65" alt="Logo"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div><br>
+            <div class="row">
+                <div class="col-md-12 text-center copyright">
+                    <p>&copy; 2023 Camp and climb. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+</footer>
+
+    <script>
+
+        ///////////////////////////////remove/////////////////////////////////////////////
+      
+      $(document).ready(function() {
+    // Event handler for the "Remove" buttons inside the table
+    $(document).on("click", ".remove-from-cart", function() {
+        var productId = $(this).data("product-id");
+        var $button = $(this);
+
+        $.ajax({
+            type: "POST",
+            url: "removeFromCart.php",
+            data: { productId: productId },
+            success: function(response) {
+                if (response === "success") {
+                    $button.closest("tr").remove();
+                } else {
+                    alert("Failed to remove the item from the cart.");
+                }
+            },
+            error: function() {
+                alert("Failed to remove the item from the cart.");
+            }
+        });
+    });
+
+    
+// Event handler for removing items from the wishlist
+$(document).on("click", ".remove-from-wishlist", function() {
+    var productId = $(this).data("product-id");
+    var $button = $(this);
+
+    $.ajax({
+        type: "POST",
+        url: "removeFromWishlist.php",
+        data: { productId: productId },
+        success: function(response) {
+            if (response === "success") {
+                // Use closest() to find the closest table row (tr) and remove it
+                $button.closest("tr").remove();
+            } else {
+                alert("Failed to remove the item from the wishlist.");
+            }
+        },
+        error: function() {
+            alert("Failed to remove the item from the wishlist.");
+        }
+    });
+});
+
+
+
+    /////////////////////////////////////////////////cart///////////////////////////////////////////////////
+
+    // Event handler for the "Add to Cart" buttons
+    $(".add-to-cart").on("click", function(event) {
+        event.preventDefault();
+        var productId = $(this).data("product-id");
+
+        $.ajax({
+            type: "POST",
+            url: "addToCart.php",
+            data: { productId: productId, action: "add_to_cart" },
+            dataType: "json",
+            success: function(data) {
+                if (data.success) {
+                    alert(data.message);
+                    $("#cart-notification").text("Product added to cart!").show();
+                } else {
+                    console.log("Error adding product to cart");
+                }
+            },
+            error: function() {
+                console.log("AJAX request failed");
+            }
+        });
+    });
+
+///////////////////////////////////////wishtlist////////////////////////////////////////////
+
+   // Event handler for adding items to the wishlist
+$(".add-to-wishlist").on("click", function(event) {
+    event.preventDefault();
+    var productId = $(this).data("product-id");
+    var action = $(this).data("action");
+
+    // Check if the item is already in the wishlist
+    if ($("#wishlist-content").find("[data-product-id='" + productId + "']").length > 0) {
+        alert("Item is already in the wishlist.");
+        return; // Exit the function to prevent adding duplicates
+    }
+
+    $.ajax({
+        type: "POST",
+        url: "addToWishlist.php",
+        data: { productId: productId, action: action },
+        dataType: "json",
+        success: function(data) {
+            if (data.success) {
+                alert(data.message);
+                $("#wishlist-notification").text("Product added to wishlist!").show();
+                // Add the item to the wishlist table
+                $("#wishlist-content").append(data.itemHtml);
+            } else {
+                console.log("Error adding product to wishlist");
+            }
+        },
+        error: function() {
+            console.log("AJAX request failed");
+        }
+    });
+});
+
+
+
+    ///////////////////////////////////////////////Models//////////////////////////////////////
+    
+   // Event handler to open the Wishlist Modal when clicking the wishlist button at the top
+$("#wishlist-button").on("click", function(event) {
+    event.preventDefault();
+    $.ajax({
+        type: "GET",
+        url: "addToWishlist.php?action=get_wishlist", // Specify the action to fetch wishlist content
+        success: function(data) {
+            $("#wishlist-content").html(data);
+            $("#wishlist-modal").show();
+        },
+        error: function() {
+            console.log("Failed to fetch wishlist content.");
+        }
+    });
+});
+
+// Event handler to close the Wishlist Modal
+$("#wishlist-modal").on("click", ".wishlist-modal-close", function() {
+    $("#wishlist-modal").hide();
+});
+
+    
+
+
+
+    // Event handler to open the Cart Modal
+    $(".show-cart").on("click", function(event) {
+        event.preventDefault();
+        $.ajax({
+            type: "GET",
+            url: "addToCart.php",
+            success: function(data) {
+                $("#cart-content").html(data);
+                $("#cart-modal").show();
+            },
+            error: function() {
+                console.log("Failed to fetch cart content.");
+            }
+        });
+    });
+
+    // Event handler to close the Cart Modal
+    $("#cart-modal").on("click", ".cart-modal-close", function() {
+        $("#cart-modal").hide();
+    });
+ });
+
+// Get references to the modals and close buttons
+var cartModal = document.getElementById("cart-modal");
+    var wishlistModal = document.getElementById("wishlist-modal");
+    var cartCloseButton = document.querySelector(".cart-modal-close");
+    var wishlistCloseButton = document.querySelector(".wishlist-modal-close");
+
+    // Function to close the cart modal
+    function closeCartModal() {
+        cartModal.style.display = "none";
+    }
+
+    // Function to close the wishlist modal
+    function closeWishlistModal() {
+        wishlistModal.style.display = "none";
+    }
+
+    // When the user clicks on the cart modal's close button, close the modal
+    cartCloseButton.onclick = closeCartModal;
+
+    // When the user clicks on the wishlist modal's close button, close the modal
+    wishlistCloseButton.onclick = closeWishlistModal;
+
+    // When the user clicks anywhere outside of the cart modal, close it
+    window.onclick = function(event) {
+        if (event.target == cartModal) {
+            closeCartModal();
+        } else if (event.target == wishlistModal) {
+            closeWishlistModal();
+        }
+    };
+
+
+    ////////////////////////////////////search////////////////////////////////////////////////
+
+   // Add an event listener to the search button
+   document.getElementById("search-button").addEventListener("click", function () {
+        // Get the search query from the input field
+        const searchTerm = document.getElementById("search-input").value;
+
+        // Send an AJAX request to the server to perform the search
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "search.php", true); 
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                // Display the search results in the "search-results" div
+                document.getElementById("search-results").innerHTML = xhr.responseText;
+            }
+        };
+        xhr.send("search=" + searchTerm);
+    });
+
+
+    //////////////////////////////////////////filter////////////////////////////////////////////////////////////////
+
+// JavaScript for filter dropdown
+document.addEventListener("DOMContentLoaded", function () {
+    // Toggle filter dropdown when the filter button is clicked
+    document.getElementById("filter-toggle").addEventListener("click", function () {
+        document.getElementById("filter-dropdown-content").classList.toggle("show");
+    });
+
+    // Close the filter dropdown when clicking outside of it
+    window.addEventListener("click", function (event) {
+        if (!event.target.matches(".filter-button")) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains("show")) {
+                    openDropdown.classList.remove("show");
+                }
+            }
+        }
+    });
+
+    // Fetch tags from PHP and dynamically generate filter options
+    fetch('search.php') 
+        .then(response => response.json())
+        .then(tags => {
+            var filterDropdown = document.getElementById("filter-dropdown-content");
+
+            // Create a "All Products" option
+            var allProductsOption = document.createElement("button");
+            allProductsOption.innerText = "All Products";
+            allProductsOption.setAttribute("data-filter", "all");
+            filterDropdown.appendChild(allProductsOption);
+
+            // Create filter options for each tag fetched from the database
+            tags.forEach(tag => {
+                var filterOption = document.createElement("button");
+                filterOption.innerText = tag;
+                filterOption.setAttribute("data-filter", tag);
+                filterDropdown.appendChild(filterOption);
+            });
+
+            // Apply filter when a filter option is clicked
+            var filterOptions = document.getElementsByClassName("filter-option");
+            for (var i = 0; i < filterOptions.length; i++) {
+                filterOptions[i].addEventListener("click", function () {
+                    var filterValue = this.getAttribute("data-filter");
+                    filterProducts(filterValue);
+                });
+            }
+        })
+        .catch(error => {
+            console.error('Error fetching tags:', error);
+        });
+});
+
+// JavaScript for filtering products (same as before)
+function filterProducts(category) {
+    // Get all product cards
+    var productCards = document.getElementsByClassName("product-card");
+
+    // Show all products if category is "all"
+    if (category === "all") {
+        for (var i = 0; i < productCards.length; i++) {
+            productCards[i].style.display = "block";
+        }
+    } else {
+        // Hide products that don't match the selected category
+        for (var i = 0; i < productCards.length; i++) {
+            var productCategory = productCards[i].getAttribute("data-category");
+            if (productCategory === category) {
+                productCards[i].style.display = "block";
+            } else {
+                productCards[i].style.display = "none";
+            }
+        }
+    }
+}
+
+
+    </script>
+</body>
+
+</html>

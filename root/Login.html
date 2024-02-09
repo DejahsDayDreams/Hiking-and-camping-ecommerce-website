@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login</title> <!--Page title-->
+
+        <!--External links-->
+        <link rel="stylesheet" href="MainStyling.css" type="text/css"> <!--CSS-->
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+       <!--Meta data-->
+       <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width", initial-scale="1.0">
+
+       <meta author=" Samantha Dejah Kitchener"> <!--your name here-->
+       <meta name="description" content="Explore a wide range of camping, automotive, and sports gear at our online shop. Find quality products for your outdoor adventures and sports activities.">
+       <meta name="keywords" content="camping gear, automotive accessories, sports equipment, outdoor gear, adventure products, sports gear shop, outdoor sports, automotive parts">
+
+
+
+       <style>
+           /* CSS classes for modals */
+           .modal {
+               display: none;
+           }
+       
+           .custom-modal  {
+               width: 1200px;
+               max-height: auto;
+               margin: 0 auto;
+               
+           }
+           .modal-content
+           {
+               width: 800px;
+               max-height: auto;
+               margin: 0 auto; 
+               box-shadow: 16px 16px 32px #1a1a1abc,
+               -16px -16px 32px #61606084;
+           }
+
+           
+       
+           /* Side Menu Styles */
+           .side-menu {
+               float: right; 
+          margin-right: 3%;
+          margin-top: 8%;
+           width: 20%; 
+           background-color: #ebf4ee; 
+           color: #fff; 
+           padding: 20px; 
+           border-radius: 15px;
+           }
+
+           .side-menu ul {
+           list-style: none; /* Remove bullet points from the list */
+           padding: 0;
+           }
+
+           .side-menu li {
+           margin-bottom: 10px; /* Spacing between menu items */
+           }
+
+           .side-menu a {
+           text-decoration: none; /* Remove underlines from links */
+           color: #000000; /* Text color for menu links */
+           }
+
+           .side-menu a:hover {
+           text-decoration: underline; /* Add underline on hover */
+           }
+
+           /* Search Box Styles */
+           .search-box {
+           margin: 20px; 
+           }
+
+           #searchInput {
+           width: 100%; 
+           padding: 10px; 
+           border: none; 
+           border-radius: 5px; 
+           }
+
+           #searchButton {
+           background-color: #328678; /* Background color for the search button */
+           color: #fff; /* Text color for the search button */
+           border: none; /* Remove button border */
+           border-radius: 5px; /* Rounded corners */
+           padding: 10px 20px; /* Padding inside the button */
+           cursor: pointer; /* Add pointer cursor on hover */
+           }
+
+           #searchButton:hover {
+           background-color: #85c54d; /* Darker background color on hover */
+           }
+       </style>
+       
+</head>
+
+
+<body>
+    <header>
+        <section class="et-hero-tabs">
+            <div class="et-hero-tabs-container"> 
+                <a class="Logo" href="Index.html">
+                    <img src="Media/Icons/Logo.png" width="190" alt="Logo">
+                </a>
+                <a class="et-hero-tab" href="Index.html">Home</a>
+                <a class="et-hero-tab" href="Shopping.html">Shopping</a>
+                <a class="et-hero-tab" href="Contact.html">Contact</a>
+                <a class="et-hero-tab" href="Login.html">Login</a>
+                <a class="search-tab" href="#">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Search...">
+                        <button type="button" id="search-button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </a>
+                
+                
+                
+        
+                <span class="et-hero-tab-slider"></span>
+            </div>
+        </section>
+
+        <div class="shop-icons-container">
+            <a href="addToCart.php" class="show-cart">
+                <img src="Media/Icons/cart.png" width="75" alt="shopping cart" class="shop_icons">
+            </a>
+            <a href="addToWishlist.php" id="wishlist-button" class="show-wishlist">
+                <img src="Media/Icons/wish-list.png" width="75" alt="wishlist" class="shop_icons">
+            </a>
+
+         </div>    
+
+        <!-- Cart Modal -->
+<div id="cart-modal" class="modal custom-modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center"><b>Shopping Cart</b></h5>  
+            </div>
+            <div class="modal-body">
+                <!-- The cart content will be displayed here -->
+                <div id="cart-content">
+                    <!-- Cart items will be inserted here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary cart-modal-close">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Wishlist Modal -->
+<div id="wishlist-modal" class="modal custom-modal ">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="wishlist-modal-title"><b>Wishlist</b></h5>
+            </div>
+            <div class="modal-body">
+                <!-- The wishlist content will be displayed here -->
+                <div id="wishlist-content">
+                    <!-- Wishlist items will be inserted here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary wishlist-modal-close">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+    </header>
+    <main><br><br><br>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="container-form">
+                        <form action="Login.php" method="post">
+                            <div class="head">
+                                <span>LOG IN</span>
+                            </div>
+                            <div class="inputs">
+                                <input type="text"  placeholder="Email/Username" name="identifier" required>
+                                <input type="password"  placeholder="Password" name="password" required>
+                            </div>
+                            <br><br>
+                            <button type="submit" class="button">Login</button>
+                        </form>
+                        <div class="form-footer">
+                            <p>Don't have an account? <a href="Registration.html">Sign up</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </main><br><br><br><br><br>
+
+    <footer class="site-footer  ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Quick Links</h4><br>
+                    <ul class="quick-links">
+                        <li><a href="Home.html">Home</a></li>
+                        <li><a href="Shopping">Catagories</a></li>
+                        <li><a href="Login.html">Login</a></li>
+                        <li><a href="Shopping.html">Shop now</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 ">
+                    <h4>Contact Information</h4><br>
+                    <p id="contact-info">123 Main Street<br>City, State ZIP<br>Email: example@example.com<br>Phone: (123) 456-7890</p>
+                </div>
+                <div class="col-md-4 justify-content-center align-items-center">
+                    <div class="text-center">
+                        <h4>Follow Us</h4><br><br>
+                        <ul class="list-inline">
+                            <li class="list-inline-item Social-media"><a href="#"><img src="Media/Icons/facebook.png" width="65" alt="Logo"></a></li>
+                            <li class="list-inline-item Social-media"><a href="#"><img src="Media/Icons/instagram.png" width="65" alt="Logo"></a></li>
+                            <li class="list-inline-item Social-media"><a href="#"><img src="Media/Icons/linkedin.png" width="65" alt="Logo"></a></li>
+                            <li class="list-inline-item Social-media"><a href="#"><img src="Media/Icons/twitter.png" width="65" alt="Logo"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div><br>
+            <div class="row">
+                <div class="col-md-12 text-center copyright">
+                    <p>&copy; 2023 Camp and climb. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+</footer>
+<script>            ///////////////////////////////remove/////////////////////////////////////////////
+
+    $(document).ready(function() {
+    // Event handler for the "Remove" buttons inside the table
+    $(document).on("click", ".remove-from-cart", function() {
+    var productId = $(this).data("product-id");
+    var $button = $(this);
+
+    $.ajax({
+        type: "POST",
+        url: "removeFromCart.php",
+        data: { productId: productId },
+        success: function(response) {
+            if (response === "success") {
+                $button.closest("tr").remove();
+            } else {
+                alert("Failed to remove the item from the cart.");
+            }
+        },
+        error: function() {
+            alert("Failed to remove the item from the cart.");
+        }
+    });
+    });
+
+
+    // Event handler for removing items from the wishlist
+    $(document).on("click", ".remove-from-wishlist", function() {
+    var productId = $(this).data("product-id");
+    var $button = $(this);
+
+    $.ajax({
+    type: "POST",
+    url: "removeFromWishlist.php",
+    data: { productId: productId },
+    success: function(response) {
+        if (response === "success") {
+            // Use closest() to find the closest table row (tr) and remove it
+            $button.closest("tr").remove();
+        } else {
+            alert("Failed to remove the item from the wishlist.");
+        }
+    },
+    error: function() {
+        alert("Failed to remove the item from the wishlist.");
+    }
+    });
+    });
+
+
+
+    /////////////////////////////////////////////////cart///////////////////////////////////////////////////
+
+    // Event handler for the "Add to Cart" buttons
+    $(".add-to-cart").on("click", function(event) {
+    event.preventDefault();
+    var productId = $(this).data("product-id");
+
+    $.ajax({
+        type: "POST",
+        url: "addToCart.php",
+        data: { productId: productId, action: "add_to_cart" },
+        dataType: "json",
+        success: function(data) {
+            if (data.success) {
+                alert(data.message);
+                $("#cart-notification").text("Product added to cart!").show();
+            } else {
+                console.log("Error adding product to cart");
+            }
+        },
+        error: function() {
+            console.log("AJAX request failed");
+        }
+    });
+    });
+
+    ///////////////////////////////////////wishtlist////////////////////////////////////////////
+
+    // Event handler for adding items to the wishlist
+    $(".add-to-wishlist").on("click", function(event) {
+    event.preventDefault();
+    var productId = $(this).data("product-id");
+    var action = $(this).data("action");
+
+    // Check if the item is already in the wishlist
+    if ($("#wishlist-content").find("[data-product-id='" + productId + "']").length > 0) {
+    alert("Item is already in the wishlist.");
+    return; // Exit the function to prevent adding duplicates
+    }
+
+    $.ajax({
+    type: "POST",
+    url: "addToWishlist.php",
+    data: { productId: productId, action: action },
+    dataType: "json",
+    success: function(data) {
+        if (data.success) {
+            alert(data.message);
+            $("#wishlist-notification").text("Product added to wishlist!").show();
+            // Add the item to the wishlist table
+            $("#wishlist-content").append(data.itemHtml);
+        } else {
+            console.log("Error adding product to wishlist");
+        }
+    },
+    error: function() {
+        console.log("AJAX request failed");
+    }
+    });
+    });
+
+
+
+    ///////////////////////////////////////////////Models//////////////////////////////////////
+
+    // Event handler to open the Wishlist Modal when clicking the wishlist button at the top
+    $("#wishlist-button").on("click", function(event) {
+    event.preventDefault();
+    $.ajax({
+    type: "GET",
+    url: "addToWishlist.php?action=get_wishlist", // Specify the action to fetch wishlist content
+    success: function(data) {
+        $("#wishlist-content").html(data);
+        $("#wishlist-modal").show();
+    },
+    error: function() {
+        console.log("Failed to fetch wishlist content.");
+    }
+    });
+    });
+
+    // Event handler to close the Wishlist Modal
+    $("#wishlist-modal").on("click", ".wishlist-modal-close", function() {
+    $("#wishlist-modal").hide();
+    });
+
+
+
+
+
+    // Event handler to open the Cart Modal
+    $(".show-cart").on("click", function(event) {
+    event.preventDefault();
+    $.ajax({
+        type: "GET",
+        url: "addToCart.php",
+        success: function(data) {
+            $("#cart-content").html(data);
+            $("#cart-modal").show();
+        },
+        error: function() {
+            console.log("Failed to fetch cart content.");
+        }
+    });
+    });
+
+    // Event handler to close the Cart Modal
+    $("#cart-modal").on("click", ".cart-modal-close", function() {
+    $("#cart-modal").hide();
+    });
+    });
+
+    // Get references to the modals and close buttons
+    var cartModal = document.getElementById("cart-modal");
+    var wishlistModal = document.getElementById("wishlist-modal");
+    var cartCloseButton = document.querySelector(".cart-modal-close");
+    var wishlistCloseButton = document.querySelector(".wishlist-modal-close");
+
+    // Function to close the cart modal
+    function closeCartModal() {
+    cartModal.style.display = "none";
+    }
+
+    // Function to close the wishlist modal
+    function closeWishlistModal() {
+    wishlistModal.style.display = "none";
+    }
+
+    // When the user clicks on the cart modal's close button, close the modal
+    cartCloseButton.onclick = closeCartModal;
+
+    // When the user clicks on the wishlist modal's close button, close the modal
+    wishlistCloseButton.onclick = closeWishlistModal;
+
+    // When the user clicks anywhere outside of the cart modal, close it
+    window.onclick = function(event) {
+    if (event.target == cartModal) {
+        closeCartModal();
+    } else if (event.target == wishlistModal) {
+        closeWishlistModal();
+    }
+    };
+
+
+    ////////////////////////////////////search////////////////////////////////////////////////
+
+    // Add an event listener to the search button
+    document.getElementById("search-button").addEventListener("click", function () {
+    // Get the search query from the input field
+    const searchTerm = document.getElementById("search-input").value;
+
+    // Send an AJAX request to the server to perform the search
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", "search.php", true); 
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            // Display the search results in the "search-results" div
+            document.getElementById("search-results").innerHTML = xhr.responseText;
+        }
+    };
+    xhr.send("search=" + searchTerm);
+    });</script>
+
+</body>
+
+</html>
